@@ -1,4 +1,4 @@
-package cs.dal.lab0;
+package cs.dal.app2;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,18 +9,19 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity
 {
     Button b;
-    TextView v;
+    TextView tv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        b= (Button) findViewById(R.id.button3);
-        v=(TextView)findViewById(R.id.textView);
+        b = (Button) findViewById(R.id.button2);
+        tv = (TextView) findViewById(R.id.textVieww);
+        tv.setText("Successfully created!!");
     }
 
-    public void click(View view){
-        v.setText("Im New");
+    public void  clickme(View view){
+        tv.setText("clicked!!");
     }
-}4
+}

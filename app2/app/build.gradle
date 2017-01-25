@@ -4,8 +4,8 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
     defaultConfig {
-        applicationId "cs.dal.myapplication"
-        minSdkVersion 23
+        applicationId "cs.dal.app2"
+        minSdkVersion 25
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"

@@ -1,26 +1,31 @@
-package cs.dal.lab0;
+package cs.dal.myapplication;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
 {
+    TextView tv;
     Button b;
-    TextView v;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        tv = (TextView) findViewById(R.id.textView);
+        b = (Button) findViewById(R.id.button1);
 
-        b= (Button) findViewById(R.id.button3);
-        v=(TextView)findViewById(R.id.textView);
     }
 
-    public void click(View view){
-        v.setText("Im New");
+    public void clickme(View view){
+        tv.setText("Click Succesful!!");
     }
-}4
+
+
+
+}
