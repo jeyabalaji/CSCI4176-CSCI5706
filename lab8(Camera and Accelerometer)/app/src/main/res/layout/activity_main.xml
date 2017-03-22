@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cs.dal.lab8.MainActivity">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:id="@+id/profile_layout"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginTop="50dp">
+                <ImageView android:layout_width="90dp" 
+                           android:layout_height="wrap_content"
+                           android:id="@+id/propic"
+                           android:src="@drawable/common_google_signin_btn_icon_dark"/>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_margin="28dp"
+                                      android:orientation="vertical"
+                                      android:layout_marginTop="20dp">
+                                        <TextView android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:text="NAME HERE"
+                                                  android:textStyle="bold"
+                                                  android:id="@+id/name"
+                                                  android:gravity="center"/>
+
+                                        <TextView android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:text="EMAIL"
+                                                  android:textSize="12dp"
+                                                  android:id="@+id/email"
+                                                  android:gravity="center"/>
+
+                                        <Button android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/signout"
+                                                android:text="Signout"
+                                                />
+                                
+                        </LinearLayout>
+                
+
+                
+                
+        </LinearLayout>
+
+        <com.google.android.gms.common.SignInButton android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="60dp"
+                                                    android:layout_marginRight="50dp"
+                                                    android:layout_marginLeft="50dp"
+                                                     android:id="@+id/googleButt">
+
+        </com.google.android.gms.common.SignInButton>
+
+</LinearLayout>
