@@ -13,3 +13,7 @@ LAB 6 - Web services - JSON/XML parsing
 
 LAB 7 - GPS and Location services
 
+LAB 8 - Camera, Constraint Layout, Accelerometer
+
+LAB 9 - Google Signin
+
